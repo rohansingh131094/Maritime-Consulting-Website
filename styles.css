@@ -338,10 +338,6 @@ h2 {
   margin-bottom: 44px;
 }
 
-.section-heading h2 {
-  max-width: 760px;
-}
-
 .service-grid {
   display: grid;
   width: min(1180px, 100%);
@@ -448,9 +444,6 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
-.engagement h2 {
-  max-width: 780px;
-}
 
 .engagement-list {
   display: grid;
