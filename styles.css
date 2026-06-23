@@ -473,6 +473,94 @@ h2 {
   line-height: 1.55;
 }
 
+.press-grid {
+  display: grid;
+  width: min(1180px, 100%);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.press-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.press-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.press-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.press-thumb {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  /* Placeholder tile shown until an image is added (or if it fails to load). */
+  background: linear-gradient(135deg, var(--harbor), var(--steel));
+}
+
+.press-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.press-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.press-source {
+  color: var(--copper);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.press-headline {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.32;
+}
+
+.press-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 6px;
+  color: var(--harbor);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.press-link svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 160ms ease;
+}
+
+.press-card:hover .press-link svg {
+  transform: translateX(4px);
+}
+
 .education {
   width: min(1180px, 100%);
   margin: 0 auto;
@@ -781,7 +869,8 @@ h2 {
   .service-grid,
   .credentials,
   .engagement-list,
-  .education-grid {
+  .education-grid,
+  .press-grid {
     grid-template-columns: 1fr;
   }
 

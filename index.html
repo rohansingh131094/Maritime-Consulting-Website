@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -29,6 +29,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#experience">Experience</a>
+        <a href="#press">Press</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="header-cta" href="#contact">Start a Conversation</a>
@@ -249,6 +250,69 @@
             <strong>Specialist Qualification</strong>
             <span>Nuclear, Biological &amp; Chemical Defence (NBCD)</span>
           </div>
+        </div>
+      </section>
+
+      <section class="section press" id="press" aria-labelledby="press-title">
+        <div class="section-heading">
+          <p class="section-kicker">Press &amp; Media</p>
+          <h2 id="press-title">Featured across India's defence and maritime press.</h2>
+        </div>
+        <!--
+          TO ADD AN ARTICLE: duplicate one <article class="press-card"> block below and edit:
+            1. href="..."           -> the full article URL
+            2. img src="assets/..." -> add the image file to the assets/ folder, then point here
+            3. img alt="..."        -> short description of the image
+            4. .press-source        -> "Publication name · Month YYYY"
+            5. <h3>                  -> the article headline
+          Cards with no image yet will show a clean placeholder tile (no broken image).
+        -->
+        <div class="press-grid">
+          <article class="press-card">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <span class="press-thumb">
+                <img src="assets/press-1.jpg" alt="" loading="lazy" onerror="this.remove()" />
+              </span>
+              <span class="press-body">
+                <span class="press-source">Publication name · Month 2025</span>
+                <span class="press-headline">Article headline goes here — replace with the real title.</span>
+                <span class="press-link">
+                  Read article
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+                </span>
+              </span>
+            </a>
+          </article>
+          <article class="press-card">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <span class="press-thumb">
+                <img src="assets/press-2.jpg" alt="" loading="lazy" onerror="this.remove()" />
+              </span>
+              <span class="press-body">
+                <span class="press-source">Publication name · Month 2025</span>
+                <span class="press-headline">Article headline goes here — replace with the real title.</span>
+                <span class="press-link">
+                  Read article
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+                </span>
+              </span>
+            </a>
+          </article>
+          <article class="press-card">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <span class="press-thumb">
+                <img src="assets/press-3.jpg" alt="" loading="lazy" onerror="this.remove()" />
+              </span>
+              <span class="press-body">
+                <span class="press-source">Publication name · Month 2025</span>
+                <span class="press-headline">Article headline goes here — replace with the real title.</span>
+                <span class="press-link">
+                  Read article
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
+                </span>
+              </span>
+            </a>
+          </article>
         </div>
       </section>
 
