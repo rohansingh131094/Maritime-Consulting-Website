@@ -473,6 +473,38 @@ h2 {
   line-height: 1.55;
 }
 
+.education {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  border-top: 1px solid var(--line);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.education-item {
+  padding: 26px 24px;
+  background: #fff;
+}
+
+.education-item strong {
+  display: block;
+  font-size: 17px;
+}
+
+.education-item span {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .contact {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -748,7 +780,8 @@ h2 {
 
   .service-grid,
   .credentials,
-  .engagement-list {
+  .engagement-list,
+  .education-grid {
     grid-template-columns: 1fr;
   }
 

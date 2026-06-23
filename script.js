@@ -61,7 +61,7 @@ if (form) {
       const type = form.elements.engagement_type.value;
       const message = form.elements.message.value.trim();
       const body = `Name: ${name}\nEmail: ${email}\nOrganization: ${org}\nEngagement: ${type}\n\n${message}`;
-      window.location.href = `mailto:girideepsingh@gmail.com?subject=${encodeURIComponent(
+      window.location.href = `mailto:girideepsingh@icloud.com?subject=${encodeURIComponent(
         "Consulting enquiry — " + name
       )}&body=${encodeURIComponent(body)}`;
       setStatus("Opening your email app to send the enquiry…", "success");
@@ -83,10 +83,10 @@ if (form) {
         form.reset();
         setStatus("Thank you — your enquiry has been sent. Girideep will be in touch.", "success");
       } else {
-        setStatus("Something went wrong. Please email girideepsingh@gmail.com directly.", "error");
+        setStatus("Something went wrong. Please email girideepsingh@icloud.com directly.", "error");
       }
     } catch (error) {
-      setStatus("Network error. Please email girideepsingh@gmail.com directly.", "error");
+      setStatus("Network error. Please email girideepsingh@icloud.com directly.", "error");
     } finally {
       submit.disabled = false;
       submit.textContent = submitLabel;
