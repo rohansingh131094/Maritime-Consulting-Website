@@ -397,6 +397,11 @@ h2 {
   line-height: 1;
 }
 
+.metric strong.metric-text {
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.1;
+}
+
 .metric span {
   display: block;
   max-width: 220px;
