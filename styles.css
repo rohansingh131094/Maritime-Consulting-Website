@@ -158,8 +158,8 @@ a {
 .hero h1 {
   max-width: 860px;
   margin: 0;
-  font-size: clamp(38px, 5.2vw, 66px);
-  line-height: 1;
+  font-size: clamp(28px, 3.8vw, 48px);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
@@ -230,10 +230,6 @@ a {
   padding: 104px 42px;
 }
 
-.intro {
-  background: var(--paper);
-}
-
 .section.about {
   background: #fff;
 }
@@ -242,7 +238,6 @@ a {
   background: #fff;
 }
 
-.intro-grid,
 .section-heading,
 .profile,
 .engagement,
@@ -252,59 +247,13 @@ a {
   margin: 0 auto;
 }
 
-.intro-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
-  gap: 24px 72px;
-  align-items: start;
-}
-
-.intro-grid .section-kicker {
-  grid-column: 1 / -1;
-  margin: 0;
-}
-
 h2 {
   margin: 0;
-  font-size: clamp(32px, 4vw, 56px);
-  line-height: 1.02;
+  font-size: clamp(22px, 2.6vw, 36px);
+  line-height: 1.1;
   letter-spacing: 0;
 }
 
-.expertise-pillars {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  align-content: start;
-}
-
-.expertise-pillar {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 18px 20px;
-  border: 1px solid var(--line);
-  background: #fff;
-}
-
-.expertise-pillar svg {
-  flex: 0 0 auto;
-  width: 22px;
-  height: 22px;
-  fill: none;
-  stroke: var(--copper);
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.expertise-pillar span {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.intro-grid p,
 .profile-copy p,
 .contact p {
   margin: 0;
@@ -608,37 +557,6 @@ h2 {
   transform: translateX(4px);
 }
 
-.education {
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  border-top: 1px solid var(--line);
-}
-
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-}
-
-.education-item {
-  padding: 26px 24px;
-  background: #fff;
-}
-
-.education-item strong {
-  display: block;
-  font-size: 17px;
-}
-
-.education-item span {
-  display: block;
-  margin-top: 8px;
-  color: var(--ink-soft);
-  font-size: 14px;
-  line-height: 1.5;
-}
 
 .contact {
   display: grid;
@@ -870,8 +788,8 @@ h2 {
   }
 
   .hero h1 {
-    font-size: 42px;
-    line-height: 1;
+    font-size: 30px;
+    line-height: 1.1;
   }
 
   .hero-copy {
@@ -898,7 +816,6 @@ h2 {
     padding: 72px 20px;
   }
 
-  .intro-grid,
   .profile,
   .about,
   .contact {
@@ -914,11 +831,9 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .expertise-pillars,
   .service-grid,
   .credentials,
   .engagement-list,
-  .education-grid,
   .press-grid,
   .contact-panel {
     grid-template-columns: 1fr;
@@ -955,7 +870,7 @@ h2 {
   }
 
   .hero h1 {
-    font-size: 34px;
+    font-size: 26px;
   }
 
   .button {
