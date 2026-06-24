@@ -247,8 +247,13 @@ a {
 .intro-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
-  gap: 72px;
+  gap: 24px 72px;
   align-items: start;
+}
+
+.intro-grid .section-kicker {
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 h2 {
