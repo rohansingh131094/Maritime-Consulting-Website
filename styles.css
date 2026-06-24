@@ -279,13 +279,6 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.about-portrait::before {
-  content: "";
-  position: absolute;
-  inset: -14px -14px 14px 14px;
-  z-index: -1;
-  border: 1px solid var(--copper);
-}
 
 .about-portrait figcaption {
   display: flex;
