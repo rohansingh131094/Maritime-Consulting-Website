@@ -234,6 +234,14 @@ a {
   background: var(--paper);
 }
 
+.section.about {
+  background: #fff;
+}
+
+.section.press {
+  background: #fff;
+}
+
 .intro-grid,
 .section-heading,
 .profile,
@@ -263,6 +271,39 @@ h2 {
   letter-spacing: 0;
 }
 
+.expertise-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-content: start;
+}
+
+.expertise-pillar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.expertise-pillar svg {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.expertise-pillar span {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
 .intro-grid p,
 .profile-copy p,
 .contact p {
@@ -279,7 +320,6 @@ h2 {
   align-items: center;
   width: min(1180px, 100%);
   margin: 0 auto;
-  background: var(--paper);
 }
 
 .about-portrait {
@@ -359,11 +399,24 @@ h2 {
   background: #fff;
 }
 
-.service-card span {
-  display: inline-flex;
+.service-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--copper);
   color: var(--copper);
-  font-size: 12px;
-  font-weight: 800;
+}
+
+.service-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .service-card h3 {
@@ -426,9 +479,10 @@ h2 {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 110px minmax(0, 1fr);
+  grid-template-columns: 130px minmax(0, 1fr);
   column-gap: 28px;
-  padding: 28px 0;
+  align-items: center;
+  padding: 26px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -436,18 +490,12 @@ h2 {
   color: var(--copper);
   font-size: 12px;
   font-weight: 800;
+  letter-spacing: 0.04em;
 }
 
 .timeline-item h3 {
-  margin: 0 0 8px;
-  font-size: 18px;
-}
-
-.timeline-item p {
-  grid-column: 2;
   margin: 0;
-  color: var(--ink-soft);
-  line-height: 1.55;
+  font-size: 18px;
 }
 
 .engagement {
@@ -866,6 +914,7 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .expertise-pillars,
   .service-grid,
   .credentials,
   .engagement-list,
@@ -883,11 +932,7 @@ h2 {
 
   .timeline-item {
     grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .timeline-item p {
-    grid-column: auto;
+    gap: 8px;
   }
 
   .contact {

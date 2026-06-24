@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=10" />
+    <link rel="stylesheet" href="styles.css?v=11" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -75,11 +75,24 @@
         <div class="intro-grid">
           <p class="section-kicker">Consulting Focus</p>
           <h2>Senior judgment for projects where engineering, governance and execution all have to work.</h2>
-          <p>
-            Girideep Singh brings a rare combination of naval engineering depth, shipyard operating leadership, ministry
-            and board-level stakeholder management, and enterprise turnaround experience. His work is suited to leaders
-            who need more than a report: they need clarity, discipline and credible execution support.
-          </p>
+          <div class="expertise-pillars">
+            <div class="expertise-pillar">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 17h18M3 12h18M5 7h14M2 22h20M2 2h20"/></svg>
+              <span>Naval Engineering</span>
+            </div>
+            <div class="expertise-pillar">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              <span>Shipyard Operations</span>
+            </div>
+            <div class="expertise-pillar">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span>Defence Governance</span>
+            </div>
+            <div class="expertise-pillar">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span>Enterprise Turnaround</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -96,14 +109,8 @@
           <h2 id="about-title">Four decades at the helm of India's most demanding maritime programs.</h2>
           <p>
             Girideep Singh is a former Commodore of the Indian Navy and former Chairman &amp; Managing Director of
-            Hindustan Shipyard Limited. Across his career he led naval engineering, ship repair, submarine refit,
-            strategic projects, finance and infrastructure &mdash; carrying programs from approvals and funding through
-            yard execution, trials and delivery.
-          </p>
-          <p>
-            Having completed that institutional chapter, he now works independently with defence, maritime and
-            infrastructure leaders who want a senior operator in the room: someone who has been personally accountable
-            for schedule, budget, safety and stakeholder confidence on programs where the margin for error is small.
+            Hindustan Shipyard Limited &mdash; with personal accountability for schedule, budget, safety and
+            stakeholder confidence across India's most demanding maritime programs.
           </p>
           <p>
             He advises selectively, takes a hands-on view of execution, and is candid about what a program needs to
@@ -120,34 +127,46 @@
         </div>
         <div class="service-grid">
           <article class="service-card">
-            <span>01</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l8-8 8 8v10"/><path d="M10 20v-6h4v6"/></svg>
+            </span>
             <h3>Shipbuilding Advisory</h3>
-            <p>Program planning, yard readiness, contract oversight, schedule discipline, trials preparedness and owner-side project assurance.</p>
+            <p>Program planning, yard readiness, contract oversight, schedule discipline and owner-side project assurance.</p>
           </article>
           <article class="service-card">
-            <span>02</span>
-            <h3>Ship Repair & Refit</h3>
-            <p>Repair strategy, drydock planning, vendor coordination, scope control and execution governance for technically demanding vessels.</p>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 9H20v1.5"/><path d="M10 9.5c0 .83-.67 1.5-1.5 1.5h-5C2.67 11 2 10.33 2 9.5S2.67 8 3.5 8h5c.83 0 1.5.67 1.5 1.5z"/><path d="M8.5 15H4v-1.5"/></svg>
+            </span>
+            <h3>Ship Repair &amp; Refit</h3>
+            <p>Drydock planning, vendor coordination, scope control and execution governance for technically demanding vessels.</p>
           </article>
           <article class="service-card">
-            <span>03</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+            </span>
             <h3>Submarine Lifecycle Support</h3>
-            <p>Refit governance, preparedness reviews, risk identification and strategic support for complex submarine maintenance programs.</p>
+            <p>Refit governance, preparedness reviews and strategic support for complex submarine maintenance programs.</p>
           </article>
           <article class="service-card">
-            <span>04</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+            </span>
             <h3>Shipyard Transformation</h3>
-            <p>Operational stabilization, project monitoring systems, financial discipline, infrastructure planning and capacity improvement.</p>
+            <p>Operational stabilization, project monitoring, financial discipline and infrastructure capacity improvement.</p>
           </article>
           <article class="service-card">
-            <span>05</span>
-            <h3>Board & Ministry Advisory</h3>
-            <p>Strategic counsel for defence PSUs, maritime enterprises and infrastructure organizations navigating governance and policy interfaces.</p>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>Board &amp; Ministry Advisory</h3>
+            <p>Strategic counsel for defence PSUs and maritime enterprises navigating governance and policy interfaces.</p>
           </article>
           <article class="service-card">
-            <span>06</span>
-            <h3>Mentoring & Leadership</h3>
-            <p>Executive mentoring for technical leaders, project teams and organizations building maritime delivery capability at scale.</p>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <h3>Mentoring &amp; Leadership</h3>
+            <p>Executive mentoring for technical leaders building maritime delivery capability at scale.</p>
           </article>
         </div>
       </section>
@@ -187,24 +206,20 @@
         </div>
         <div class="timeline" aria-label="Career highlights">
           <div class="timeline-item">
-            <time>Aug 2025-Jan 2026</time>
+            <time>Aug 2025–Jan 2026</time>
             <h3>Chairman &amp; Managing Director (Additional Charge), Hindustan Shipyard Ltd</h3>
-            <p>Led the organization through a critical transition, ensuring governance continuity and execution focus across all maritime business lines; HSL conferred Mini Ratna (Category-I) status during this period.</p>
           </div>
           <div class="timeline-item">
-            <time>Mar 2022-Jan 2026</time>
+            <time>Mar 2022–Jan 2026</time>
             <h3>Director, Strategic Projects, Hindustan Shipyard Ltd</h3>
-            <p>Owned the Ship Repair Complex, Submarine Division and strategic naval projects; delivered 40+ ships at ~25% average margins and executed the ~&#8377;1000 Cr normal refit of INS Sindhukirti.</p>
           </div>
           <div class="timeline-item">
-            <time>2016-2022</time>
+            <time>2016–2022</time>
             <h3>Principal Director, Aircraft Carriers, Indian Navy</h3>
-            <p>Led carrier acquisition, sustainment and readiness; processed GoI AoN for a new carrier programme valued at over $4B and led technical cooperation with the US Navy and Royal Navy.</p>
           </div>
           <div class="timeline-item">
-            <time>1987-2016</time>
+            <time>1987–2016</time>
             <h3>Engineering &amp; Repair Leadership, Indian Navy</h3>
-            <p>Drove refit delivery, fleet maintenance and submarine building across carrier, frigate, dockyard and repair-yard roles &mdash; including Commodore Superintendent, Repair Yard (Port Blair) &mdash; leading teams of up to 500+ personnel.</p>
           </div>
         </div>
       </section>
