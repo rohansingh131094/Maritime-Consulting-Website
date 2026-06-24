@@ -18,6 +18,51 @@ document.querySelectorAll(".nav a").forEach((link) => {
   });
 });
 
+const credentials = document.querySelector(".credentials");
+
+if (credentials) {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reducedMotion) {
+    credentials.classList.add("is-visible");
+  } else {
+    const countUp = (el, delay) => {
+      const target = parseInt(el.dataset.count, 10);
+      const prefix = el.dataset.prefix || "";
+      const suffix = el.dataset.suffix || "";
+      const duration = 1200;
+
+      setTimeout(() => {
+        const start = performance.now();
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = prefix + Math.round(eased * target) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }, delay);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            credentials.classList.add("is-visible");
+            credentials.querySelectorAll("[data-count]").forEach((el, i) => {
+              countUp(el, i * 140);
+            });
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    observer.observe(credentials);
+  }
+}
+
 const form = document.querySelector("[data-contact-form]");
 
 if (form) {

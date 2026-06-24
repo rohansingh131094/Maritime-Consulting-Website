@@ -386,6 +386,22 @@ h2 {
   min-height: 198px;
   padding: 38px 42px;
   border-right: 1px solid rgba(255, 255, 255, 0.14);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.credentials.is-visible .metric:nth-child(1) { opacity: 1; transform: none; transition-delay: 0ms; }
+.credentials.is-visible .metric:nth-child(2) { opacity: 1; transform: none; transition-delay: 140ms; }
+.credentials.is-visible .metric:nth-child(3) { opacity: 1; transform: none; transition-delay: 280ms; }
+.credentials.is-visible .metric:nth-child(4) { opacity: 1; transform: none; transition-delay: 420ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .metric {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .metric strong {
