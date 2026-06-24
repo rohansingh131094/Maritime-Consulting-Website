@@ -410,6 +410,10 @@ h2 {
 
 .timeline {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding-left: 28px;
 }
 
@@ -425,11 +429,6 @@ h2 {
 
 .timeline-item {
   position: relative;
-  padding-bottom: 36px;
-}
-
-.timeline-item:last-child {
-  padding-bottom: 0;
 }
 
 .timeline-item::before {
