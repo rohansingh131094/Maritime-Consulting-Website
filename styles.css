@@ -158,9 +158,10 @@ a {
 .hero h1 {
   max-width: 860px;
   margin: 0;
-  font-size: clamp(28px, 3.8vw, 48px);
-  line-height: 1.08;
+  font-size: clamp(32px, 4.2vw, 58px);
+  line-height: 1.05;
   letter-spacing: 0;
+  font-weight: 600;
 }
 
 .hero-copy {
@@ -240,11 +241,18 @@ a {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
 h2 {
   margin: 0;
-  font-size: clamp(22px, 2.6vw, 36px);
-  line-height: 1.1;
+  font-size: clamp(26px, 3vw, 44px);
+  line-height: 1.08;
   letter-spacing: 0;
+  font-weight: 600;
 }
 
 .profile-copy p,
@@ -356,7 +364,8 @@ h2 {
 
 .service-card h3 {
   margin: 42px 0 14px;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -456,7 +465,8 @@ h2 {
 
 .timeline-item h3 {
   margin: 0;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.3;
 }
 
