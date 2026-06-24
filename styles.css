@@ -608,10 +608,11 @@ h2 {
 }
 
 .contact-panel {
+  grid-column: 1 / -1;
   display: grid;
-  align-content: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .contact-form {
@@ -869,7 +870,8 @@ h2 {
   .credentials,
   .engagement-list,
   .education-grid,
-  .press-grid {
+  .press-grid,
+  .contact-panel {
     grid-template-columns: 1fr;
   }
 
