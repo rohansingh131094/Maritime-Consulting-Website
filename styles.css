@@ -23,7 +23,7 @@ body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
-  background: var(--paper);
+  background: #fff;
 }
 
 a {
@@ -230,13 +230,6 @@ a {
   padding: 104px 42px;
 }
 
-.section.about {
-  background: #fff;
-}
-
-.section.press {
-  background: #fff;
-}
 
 .section-heading,
 .profile,
