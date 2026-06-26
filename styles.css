@@ -805,6 +805,20 @@ h2 {
   font-size: 13px;
 }
 
+@media (max-width: 1180px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-panel {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(720px, 100%);
+    margin-top: 32px;
+  }
+}
+
 @media (max-width: 980px) {
   .site-header {
     padding: 14px 20px;
@@ -853,10 +867,6 @@ h2 {
     padding: 112px 20px 24px;
   }
 
-  .hero-content {
-    padding-bottom: 300px;
-  }
-
   .hero h1 {
     font-size: 30px;
     line-height: 1.1;
@@ -867,9 +877,7 @@ h2 {
   }
 
   .hero-panel {
-    right: 20px;
-    bottom: 24px;
-    width: calc(100% - 40px);
+    width: 100%;
     grid-template-columns: 1fr;
   }
 

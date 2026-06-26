@@ -1,0 +1,344 @@
+:root {
+  --ink: #102027;
+  --ink-soft: #3e555c;
+  --paper: #f7f5ef;
+  --line: rgba(16, 32, 39, 0.16);
+  --copper: #b96f34;
+  --harbor: #0e3d49;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #d9dde0;
+  color: var(--ink);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.sheet {
+  position: relative;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 24px auto;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 22px 70px rgba(16, 32, 39, 0.18);
+}
+
+.brand-mark {
+  display: grid;
+  width: 18mm;
+  height: 18mm;
+  place-items: center;
+  border: 1px solid currentColor;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.letterhead {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 24mm 22mm 18mm;
+}
+
+.letterhead::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8mm;
+  background: var(--harbor);
+}
+
+.letterhead-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18mm;
+  padding-bottom: 16mm;
+  border-bottom: 1px solid var(--line);
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+}
+
+.identity h1 {
+  margin: 0;
+  font-size: 24pt;
+  line-height: 1;
+}
+
+.identity p {
+  margin: 2mm 0 0;
+  color: var(--copper);
+  font-size: 8.5pt;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-block {
+  display: grid;
+  gap: 2.2mm;
+  color: var(--ink-soft);
+  font-size: 9pt;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.letter-body {
+  padding: 20mm 0 0;
+}
+
+.letterhead .letter-body {
+  min-height: 190mm;
+}
+
+.letter-meta {
+  display: grid;
+  gap: 3.5mm;
+  width: 70mm;
+  margin-bottom: 18mm;
+  color: var(--ink-soft);
+  font-size: 10pt;
+}
+
+.rule-line {
+  display: inline-block;
+  width: 45mm;
+  border-bottom: 1px solid var(--line);
+  transform: translateY(-1mm);
+}
+
+.sample-copy {
+  max-width: 150mm;
+  color: var(--ink);
+  font-size: 11pt;
+  line-height: 1.8;
+}
+
+.sample-copy p {
+  margin: 0 0 6mm;
+}
+
+.signature {
+  margin-top: 18mm;
+  color: var(--ink-soft);
+  font-size: 10pt;
+  line-height: 1.5;
+}
+
+.signature strong {
+  color: var(--ink);
+}
+
+.letterhead-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12mm;
+  padding-top: 8mm;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 8.5pt;
+  line-height: 1.35;
+}
+
+.letterhead-footer strong {
+  color: var(--ink);
+}
+
+.letterhead-footer div:first-child {
+  display: grid;
+  gap: 2mm;
+}
+
+.letterhead-qr {
+  display: grid;
+  justify-items: center;
+  gap: 1.5mm;
+  color: var(--ink-soft);
+  font-size: 7.4pt;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.letterhead-qr img {
+  display: block;
+  width: 18mm;
+  height: 18mm;
+}
+
+.cards-page {
+  display: grid;
+  align-content: start;
+  gap: 10mm;
+  padding: 18mm;
+}
+
+.card-note {
+  color: var(--ink-soft);
+  font-size: 10pt;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 90mm);
+  gap: 10mm;
+}
+
+.business-card {
+  position: relative;
+  width: 90mm;
+  height: 50mm;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.business-card.front {
+  display: grid;
+  align-content: space-between;
+  padding: 8mm;
+  color: #fff;
+  background: var(--harbor);
+}
+
+.business-card.front::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8, 25, 31, 0.95), rgba(8, 25, 31, 0.78)),
+    url("../assets/shipyard-advisory.png") center / cover;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 4mm;
+}
+
+.card-top .brand-mark {
+  width: 13mm;
+  height: 13mm;
+}
+
+.card-title {
+  margin-top: 8mm;
+}
+
+.card-title h2 {
+  margin: 0;
+  font-size: 18pt;
+  line-height: 1;
+}
+
+.card-title p {
+  margin: 2mm 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 7.2pt;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.card-line {
+  position: relative;
+  z-index: 1;
+  width: 24mm;
+  height: 1px;
+  background: var(--copper);
+}
+
+.business-card.back {
+  display: grid;
+  grid-template-columns: 1fr 25mm;
+  gap: 4mm;
+  padding: 7mm 7.5mm 8.5mm;
+}
+
+.card-back-main {
+  display: grid;
+  align-content: start;
+}
+
+.card-back-main h3 {
+  margin: 0;
+  font-size: 14pt;
+  line-height: 1;
+}
+
+.card-back-main .role {
+  margin: 1.2mm 0 0;
+  color: var(--copper);
+  font-size: 6.9pt;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.card-details {
+  display: grid;
+  gap: 1.25mm;
+  margin-top: 4.5mm;
+  color: var(--ink-soft);
+  font-size: 7.1pt;
+  line-height: 1.25;
+}
+
+.card-qr {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 1mm;
+  color: var(--ink-soft);
+  font-size: 5.8pt;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.card-qr img {
+  display: block;
+  width: 23mm;
+  height: 23mm;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  .card-note {
+    display: none;
+  }
+}
